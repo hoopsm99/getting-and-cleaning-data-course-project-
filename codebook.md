@@ -1,21 +1,41 @@
 Codebook
+========
 
-Data is from the Human Activity Recognition Using Smartphones Dataset.
+This code book:
+      1. describes the original data
+      2. describes the variables contained in the tidy dataset tidy.txt
+
+Data is taken from the Human Activity Recognition Using Smartphones Dataset.
 
 It was downloaded from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 Data Set Information:
+============
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
+Human Activity Recognition Using Smartphones Dataset      
+License:
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
 
-tidy.txt is a dataset containing the following variables:
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012. 
+
+
+
+tidy.txt
+==========
+is a tidy data set.  Variable names have been expanded to be more readable, each row represents a single observation of a subject for each activity enganged in for the experiment. Each column is a single variable. The data set, tidy.txt, contains the following variables:
+
  [1] "subject"  - the subject of the experiment                               
- [2] "activity" - one of 6 acitities engaged in (walking, walking upstairs, walking downstairs, sitting, standing, laying).
+ [2] "activity" - one of 6 acitities engaged in by the subject (walking, walking upstairs, walking downstairs, sitting, standing, laying).
 
-Each of the following is the mean for each subject and activty of the various maeasurements taken during the experiment.
+Each of the following variables form tidy.txt is the mean for each subject and activty combination for each of the various mean or standard deviation maeasurements from the original dataset.  
 
  [3] "timeBodyAccelerometerMean-X"                         
  [4] "timeBodyAccelerometerMean-Y"                         
@@ -96,3 +116,6 @@ Each of the following is the mean for each subject and activty of the various ma
 [79] "frequencyBodyGyroscopeJerkMagnitudeMean"             
 [80] "frequencyBodyGyroscopeJerkMagnitudeStd"              
 [81] "frequencyBodyGyroscopeJerkMagnitudeMeanFrequency" 
+
+
+
