@@ -10,7 +10,7 @@ Contained in this repository are the following 4 files:
       
       3. codebook.md describes variables and calculations.
       
-      4. tidy.txt is the final data set containing the average of each              variable for each activity and each subject.
+      4. tidy.txt is the final data set containing the average of each variable for each activity and each subject.
       
 run_analysis.R does the following:
 
